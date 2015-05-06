@@ -6,7 +6,7 @@ jade        = require 'gulp-jade'
 bowerFiles  = require 'main-bower-files'
 source      = require 'vinyl-source-stream'
 browserify  = require 'browserify'
-nib = require 'nib'
+nib         = require 'nib'
 
 gulp.task 'js', ->
   browserify
