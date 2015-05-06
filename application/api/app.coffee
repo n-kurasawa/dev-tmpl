@@ -4,14 +4,14 @@ favicon = require('serve-favicon')
 logger = require('morgan')
 cookieParser = require('cookie-parser')
 bodyParser = require('body-parser')
-routes = require('./routes/index')
+routes = require('./routes/routes')
 app = express()
 
 app.use logger('dev')
 app.use bodyParser.json()
 app.use bodyParser.urlencoded(extended: false)
 app.use cookieParser()
-app.use '/', routes
+app.use '/api', routes
 
 # catch 404 and forward to error handler
 app.use (req, res, next) ->
@@ -25,7 +25,7 @@ app.use (req, res, next) ->
 if app.get('env') == 'development'
   app.use (err, req, res, next) ->
     res.status err.status or 500
-    res.render 'error',
+    res.json
       message: err.message
       error: err
     return
@@ -33,7 +33,7 @@ if app.get('env') == 'development'
 # no stacktraces leaked to user
 app.use (err, req, res, next) ->
   res.status err.status or 500
-  res.render 'error',
+  res.json
     message: err.message
     error: {}
   return
