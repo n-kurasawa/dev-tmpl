@@ -1,11 +1,13 @@
 {
   "run_list": [
-    "yumsetup",
     "yum-epel",
     "nginx",
     "mongodb",
     "nodejs"
   ],
+  "nginx": {
+    "do_not_cache": 1
+  },
   "automatic": {
     "ipaddress": "vagrant"
   }
