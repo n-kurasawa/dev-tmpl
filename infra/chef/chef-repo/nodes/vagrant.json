@@ -3,7 +3,8 @@
     "yum-epel",
     "nginx",
     "mongodb",
-    "nodejs"
+    "nodejs",
+    "pm2"
   ],
   "nginx": {
     "do_not_cache": 1
