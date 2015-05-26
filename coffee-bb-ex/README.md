@@ -18,3 +18,4 @@
 * Nginx
 * Gulp
 * Browserify
+* pm2
