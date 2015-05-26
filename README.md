@@ -1,20 +1,7 @@
 # dev-tmpl
 
-## Environment
-### Backend
+## coffee-bb-ex
 * CoffeeScript
-* Express
-* MongoDB
-
-### Frontend
-* CoffeeScript
-* Jade
-* Stylus
 * Backbone
+* Express
 
-### Infra & Others
-* Chef
-* Vagrant
-* Nginx
-* Gulp
-* Browserify
