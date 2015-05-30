@@ -1,0 +1,15 @@
+{
+  "run_list": [
+    "yum-epel",
+    "nginx",
+    "mongodb",
+    "nodejs",
+    "pm2"
+  ],
+  "nginx": {
+    "do_not_cache": 1
+  },
+  "automatic": {
+    "ipaddress": "vagrant"
+  }
+}

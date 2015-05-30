@@ -1,0 +1,5 @@
+source "https://supermarket.chef.io"
+
+cookbook "yum-epel"
+cookbook 'mongodb', '~> 0.16.2'
+cookbook 'nodejs', '~> 2.4.0'
