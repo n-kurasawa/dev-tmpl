@@ -1,0 +1,12 @@
+{
+  "run_list": [
+    "yum-epel",
+    "nginx"
+  ],
+  "nginx": {
+    "do_not_cache": 1
+  },
+  "automatic": {
+    "ipaddress": "vagrant"
+  }
+}
