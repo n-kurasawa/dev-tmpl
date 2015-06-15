@@ -25,11 +25,12 @@ gulp.task ('vendor', function() {
     gulp.src(bowerFiles())
     .pipe(plumber())
     .pipe(concat('vendor.js'))
-    .pipe(gulp.dest('./public/js'))
+    .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('watch', ['build'], function() {
   gulp.watch("src/jsx/**/*.jsx", ['js']);
+  gulp.watch("src/jsx/**/*.js", ['js']);
   gulp.watch('bower_components/**/*.js', ['vendor']);
 });
 
