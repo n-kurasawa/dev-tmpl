@@ -1,3 +1,5 @@
 source "https://supermarket.chef.io"
 
-cookbook "yum-epel"
+cookbook 'nodejs'
+cookbook 'postgresql', '~> 3.4.20'
+cookbook 'elixir', '= 0.8.0'

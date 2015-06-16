@@ -1,10 +1,15 @@
 {
   "run_list": [
-    "yum-epel",
-    "nginx"
+    "nginx",
+    "elixir",
+    "postgresql"
+    "nodejs"
   ],
   "nginx": {
     "do_not_cache": 1
+  },
+  "elixir": {
+    "version": "1.0.2"
   },
   "automatic": {
     "ipaddress": "vagrant"
