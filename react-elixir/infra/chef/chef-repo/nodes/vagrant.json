@@ -2,7 +2,7 @@
   "run_list": [
     "nginx",
     "elixir",
-    "postgresql"
+    "postgresql",
     "nodejs"
   ],
   "nginx": {
