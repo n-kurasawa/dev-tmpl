@@ -16,8 +16,8 @@ service "nginx" do
 end
 
 template "default.conf" do
-    path "/etc/nginx/conf.d/default.conf"
-    source "default.conf.erb"
+    path "/etc/nginx/sites-available/default"
+    source "default.erb"
     owner "root"
     group "root"
     mode 0644
